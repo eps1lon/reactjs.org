@@ -10,7 +10,10 @@ export const SUPPORTED_FILES = [AppJSPath, StylesCSSPath];
 
 export const createFileMap = (codeSnippets: any) => {
   return codeSnippets.reduce(
-    (result: Record<string, SandpackFile>, codeSnippet: React.ReactElement) => {
+    (
+      result: Record<string, SandpackFile>,
+      codeSnippet: React.ReactElement<any>
+    ) => {
       if (
         (codeSnippet.type as any).mdxName !== 'pre' &&
         codeSnippet.type !== 'pre'

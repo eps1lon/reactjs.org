@@ -34,7 +34,7 @@ function ConsoleBlock({level = 'error', children}: ConsoleBlockProps) {
   if (typeof children === 'string') {
     message = children;
   } else if (isValidElement(children)) {
-    message = children.props.children;
+    message = (children as React.ReactElement<any>).props.children;
   }
 
   return (

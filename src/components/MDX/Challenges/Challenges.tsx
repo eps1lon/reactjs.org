@@ -29,7 +29,7 @@ export interface ChallengeContents {
 }
 
 const parseChallengeContents = (
-  children: React.ReactElement[]
+  children: React.ReactElement<any>[]
 ): ChallengeContents[] => {
   const contents: ChallengeContents[] = [];
 

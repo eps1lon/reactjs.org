@@ -69,11 +69,6 @@ export interface ComponentWithAs<ComponentType extends As, ComponentProps> {
   ): React.ReactElement | null;
 
   displayName?: string;
-  propTypes?: React.WeakValidationMap<
-    PropsWithAs<ComponentType, ComponentProps>
-  >;
-  contextTypes?: React.ValidationMap<any>;
-  defaultProps?: Partial<PropsWithAs<ComponentType, ComponentProps>>;
 }
 
 /**

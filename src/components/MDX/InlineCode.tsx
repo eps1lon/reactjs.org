@@ -4,6 +4,8 @@
 
 import cn from 'classnames';
 
+import type {JSX} from 'react';
+
 interface InlineCodeProps {
   isLink?: boolean;
   meta?: string;

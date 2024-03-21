@@ -2,7 +2,7 @@
  * Copyright (c) Facebook, Inc. and its affiliates.
  */
 
-import {Children, useContext, useMemo} from 'react';
+import {Children, useContext, useMemo, type JSX} from 'react';
 import * as React from 'react';
 import cn from 'classnames';
 
